@@ -1,15 +1,15 @@
 var mongoose = require('mongoose');
 
-const TodoSchema= new mongoose.Schema({
+const TodosSchema= new mongoose.Schema({
     id: String,
     name: String,
     time: Date,
+    status: Boolean
 });
 
 
-var Todo= mongoose.model('Tank', TodoSchema);
+const Todos = mongoose.model('Tank', TodosSchema);
 
 
-
-module.exports =Todo;
+module.exports = Todos ;
 
